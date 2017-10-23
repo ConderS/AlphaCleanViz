@@ -643,3 +643,34 @@ AttributeError: 'collections.OrderedDict' object has no attribute 'strip'
 2017-10-23 03:27:01,069 INFO     [model] [build:  27] Building Vega Specification...
 2017-10-23 03:27:01,070 INFO     [model] [build:  43] Done Building
 2017-10-23 03:27:01,070 INFO     [main] [run:  65] Vega specification outputted as: spec.json
+2017-10-23 03:29:24,936 INFO     [main] [<module>:  70] Starting Script
+2017-10-23 03:29:24,938 ERROR    [main] [<module>: 106] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 103, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 58, in run
+    data, columns = self.convert_csv_to_dict(data_file, columns)
+  File "main.py", line 51, in convert_csv_to_dict
+    for k, _ in data[0]:
+ValueError: too many values to unpack (expected 2)
+
+2017-10-23 03:29:24,938 INFO     [main] [<module>: 107] Ending Script Unsuccessfully
+2017-10-23 03:29:57,614 INFO     [main] [<module>:  71] Starting Script
+2017-10-23 03:29:57,616 INFO     [model] [build:  27] Building Vega Specification...
+2017-10-23 03:29:57,616 ERROR    [main] [<module>: 107] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 104, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 61, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/alphaclean_interface/generate_static/model.py", line 38, in build
+    val = self.columns[0]
+TypeError: 'NoneType' object is not subscriptable
+
+2017-10-23 03:29:57,616 INFO     [main] [<module>: 108] Ending Script Unsuccessfully
+2017-10-23 03:31:27,734 INFO     [main] [<module>:  70] Starting Script
+2017-10-23 03:31:27,735 INFO     [model] [build:  27] Building Vega Specification...
+2017-10-23 03:31:27,736 INFO     [model] [build:  43] Done Building
+2017-10-23 03:31:27,736 INFO     [main] [run:  65] Vega specification outputted as: spec.json
+2017-10-23 03:31:48,162 INFO     [main] [<module>:  72] Starting Script
+2017-10-23 03:31:48,165 INFO     [model] [build:  27] Building Vega Specification...
+2017-10-23 03:31:48,165 INFO     [model] [build:  43] Done Building
+2017-10-23 03:31:48,166 INFO     [main] [run:  67] Vega specification outputted as: spec.json

@@ -48,8 +48,9 @@ class Pipeline(object):
             return data, columns
 
         columns = []
-        for k, _ in data[0]:
+        for k, _ in data[0].items():
             columns.append(k)
+
         return data, columns
 
 
