@@ -24,7 +24,7 @@ class Chart(object):
 class BarChart(Chart):
 
     def build(self):
-        self.logger.info('Building Vega Specification...')
+        self.logger.info('Building Vega Specification for a bar chart...')
 
         skel_file = open(SKELETONS['BarChart']).read()
         self.spec = json.loads(skel_file)
@@ -46,7 +46,7 @@ class BarChart(Chart):
 
 class ScatterPlot(Chart):
    def build(self):
-        self.logger.info('Building Vega Specification...')
+        self.logger.info('Building Vega Specification for a scatter plot...')
 
         skel_file = open(SKELETONS['ScatterPlot']).read()
         self.spec = json.loads(skel_file)
@@ -55,11 +55,13 @@ class ScatterPlot(Chart):
         updateNestedDictByVal(self.spec, None, self.data)
 
         # Alternates between columns to fill in relevant X and Y fields in Vega's scale, title, and marks specifications
-        for idx in range(0, 10):
-            if idx % 2:
+        for i in range(1, 11):
+            if not i % 3:
+                val = self.columns[2]
+            elif i % 3 == 2:
                 val = self.columns[1]
             else:
-                val = self.columns[1]
+                val = self.columns[0]
             updateNestedDictByVal(self.spec, None, val)
 
         self.logger.info('Done Building')

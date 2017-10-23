@@ -39,10 +39,17 @@ class Pipeline(object):
 
     def convert_csv_to_dict(self, data_file, columns):
         reader = csv.DictReader(open(data_file, encoding='utf-8-sig'))
-        data = []
 
+        data = []
         for line in reader:
-            data.append(line)
+            if columns:
+                record = {}
+                dict_line = dict(line)
+                for column in columns:
+                    record[column] = dict_line[column]
+                data.append(record)
+            else:
+                data.append(line)
 
         if columns:
             return data, columns

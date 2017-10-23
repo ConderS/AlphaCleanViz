@@ -674,3 +674,155 @@ TypeError: 'NoneType' object is not subscriptable
 2017-10-23 03:31:48,165 INFO     [model] [build:  27] Building Vega Specification...
 2017-10-23 03:31:48,165 INFO     [model] [build:  43] Done Building
 2017-10-23 03:31:48,166 INFO     [main] [run:  67] Vega specification outputted as: spec.json
+2017-10-23 03:39:16,042 INFO     [main] [<module>:  71] Starting Script
+2017-10-23 03:39:16,043 INFO     [model] [build:  27] Building Vega Specification...
+2017-10-23 03:39:16,044 INFO     [model] [build:  43] Done Building
+2017-10-23 03:39:16,045 INFO     [main] [run:  66] Vega specification outputted as: spec.json
+2017-10-23 03:46:18,194 INFO     [main] [<module>:  71] Starting Script
+2017-10-23 03:46:18,199 INFO     [model] [build:  49] Building Vega Specification for a scatter plot...
+2017-10-23 03:46:18,226 INFO     [model] [build:  67] Done Building
+2017-10-23 03:46:18,238 INFO     [main] [run:  66] Vega specification outputted as: spec.json
+2017-10-23 03:51:57,802 INFO     [main] [<module>:  73] Starting Script
+2017-10-23 03:51:57,804 ERROR    [main] [<module>: 109] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 106, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 61, in run
+    data, columns = self.convert_csv_to_dict(data_file, columns)
+  File "main.py", line 46, in convert_csv_to_dict
+    record[column] = line[column]
+KeyError: 'HorsePower'
+
+2017-10-23 03:51:57,804 INFO     [main] [<module>: 110] Ending Script Unsuccessfully
+2017-10-23 03:52:17,657 INFO     [main] [<module>:  74] Starting Script
+2017-10-23 03:52:17,659 ERROR    [main] [<module>: 110] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 107, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 62, in run
+    data, columns = self.convert_csv_to_dict(data_file, columns)
+  File "main.py", line 47, in convert_csv_to_dict
+    record[column] = line[column]
+KeyError: 'HorsePower'
+
+2017-10-23 03:52:17,659 INFO     [main] [<module>: 111] Ending Script Unsuccessfully
+2017-10-23 03:56:37,322 INFO     [main] [<module>:  73] Starting Script
+2017-10-23 03:56:37,324 ERROR    [main] [<module>: 109] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 106, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 61, in run
+    data, columns = self.convert_csv_to_dict(data_file, columns)
+  File "main.py", line 41, in convert_csv_to_dict
+    reader = dict(csv.DictReader(open(data_file, encoding='utf-8-sig')))
+ValueError: dictionary update sequence element #0 has length 9; 2 is required
+
+2017-10-23 03:56:37,324 INFO     [main] [<module>: 110] Ending Script Unsuccessfully
+2017-10-23 03:57:47,611 INFO     [main] [<module>:  74] Starting Script
+2017-10-23 03:57:47,613 ERROR    [main] [<module>: 110] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 107, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 62, in run
+    data, columns = self.convert_csv_to_dict(data_file, columns)
+  File "main.py", line 47, in convert_csv_to_dict
+    record[column] = line[column]
+KeyError: 'HorsePower'
+
+2017-10-23 03:57:47,613 INFO     [main] [<module>: 111] Ending Script Unsuccessfully
+2017-10-23 03:58:02,478 INFO     [main] [<module>:  74] Starting Script
+2017-10-23 03:58:02,480 ERROR    [main] [<module>: 110] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 107, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 62, in run
+    data, columns = self.convert_csv_to_dict(data_file, columns)
+  File "main.py", line 47, in convert_csv_to_dict
+    record[column] = dict_line[column]
+KeyError: 'HorsePower'
+
+2017-10-23 03:58:02,480 INFO     [main] [<module>: 111] Ending Script Unsuccessfully
+2017-10-23 03:58:16,540 INFO     [main] [<module>:  75] Starting Script
+2017-10-23 03:58:16,542 ERROR    [main] [<module>: 111] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 108, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 63, in run
+    data, columns = self.convert_csv_to_dict(data_file, columns)
+  File "main.py", line 48, in convert_csv_to_dict
+    record[column] = dict_line[column]
+KeyError: 'HorsePower'
+
+2017-10-23 03:58:16,542 INFO     [main] [<module>: 112] Ending Script Unsuccessfully
+2017-10-23 03:58:46,100 INFO     [main] [<module>:  75] Starting Script
+2017-10-23 03:58:46,102 ERROR    [main] [<module>: 111] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 108, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 63, in run
+    data, columns = self.convert_csv_to_dict(data_file, columns)
+  File "main.py", line 49, in convert_csv_to_dict
+    data.append(record)
+NameError: name 'data' is not defined
+
+2017-10-23 03:58:46,102 INFO     [main] [<module>: 112] Ending Script Unsuccessfully
+2017-10-23 04:00:45,831 INFO     [main] [<module>:  78] Starting Script
+2017-10-23 04:00:45,836 INFO     [model] [build:  49] Building Vega Specification for a scatter plot...
+2017-10-23 04:00:45,848 INFO     [model] [build:  67] Done Building
+2017-10-23 04:00:45,854 INFO     [main] [run:  73] Vega specification outputted as: spec.json
+2017-10-23 04:03:59,417 INFO     [main] [<module>:  78] Starting Script
+2017-10-23 04:03:59,423 INFO     [model] [build:  49] Building Vega Specification for a scatter plot...
+2017-10-23 04:03:59,434 INFO     [model] [build:  67] Done Building
+2017-10-23 04:03:59,439 INFO     [main] [run:  73] Vega specification outputted as: spec.json
+2017-10-23 04:05:29,462 INFO     [main] [<module>:  78] Starting Script
+2017-10-23 04:05:29,468 INFO     [model] [build:  49] Building Vega Specification for a scatter plot...
+2017-10-23 04:05:29,480 INFO     [model] [build:  67] Done Building
+2017-10-23 04:05:29,486 INFO     [main] [run:  73] Vega specification outputted as: spec.json
+2017-10-23 04:06:07,464 INFO     [main] [<module>:  78] Starting Script
+2017-10-23 04:06:07,471 INFO     [model] [build:  49] Building Vega Specification for a scatter plot...
+2017-10-23 04:06:07,486 INFO     [model] [build:  67] Done Building
+2017-10-23 04:06:07,491 INFO     [main] [run:  73] Vega specification outputted as: spec.json
+2017-10-23 04:17:10,569 INFO     [main] [<module>:  78] Starting Script
+2017-10-23 04:17:10,575 INFO     [model] [build:  49] Building Vega Specification for a scatter plot...
+2017-10-23 04:17:10,579 ERROR    [main] [<module>: 114] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 111, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 68, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/alphaclean_interface/generate_static/model.py", line 61, in build
+    elif idx % 3 == 2:
+NameError: name 'idx' is not defined
+
+2017-10-23 04:17:10,579 INFO     [main] [<module>: 115] Ending Script Unsuccessfully
+2017-10-23 04:17:16,399 INFO     [main] [<module>:  78] Starting Script
+2017-10-23 04:17:16,405 INFO     [model] [build:  49] Building Vega Specification for a scatter plot...
+2017-10-23 04:17:16,417 INFO     [model] [build:  67] Done Building
+2017-10-23 04:17:16,423 INFO     [main] [run:  73] Vega specification outputted as: spec.json
+2017-10-23 04:18:14,092 INFO     [main] [<module>:  78] Starting Script
+2017-10-23 04:18:14,098 INFO     [model] [build:  49] Building Vega Specification for a scatter plot...
+2017-10-23 04:18:14,110 INFO     [model] [build:  67] Done Building
+2017-10-23 04:18:14,116 INFO     [main] [run:  73] Vega specification outputted as: spec.json
+2017-10-23 04:21:01,727 INFO     [main] [<module>:  78] Starting Script
+2017-10-23 04:21:01,733 INFO     [model] [build:  49] Building Vega Specification for a scatter plot...
+2017-10-23 04:21:01,745 INFO     [model] [build:  67] Done Building
+2017-10-23 04:21:01,750 INFO     [main] [run:  73] Vega specification outputted as: spec.json
+2017-10-23 04:31:54,279 INFO     [main] [<module>:  78] Starting Script
+2017-10-23 04:31:54,284 INFO     [model] [build:  49] Building Vega Specification for a scatter plot...
+2017-10-23 04:31:54,297 INFO     [model] [build:  67] Done Building
+2017-10-23 04:31:54,304 INFO     [main] [run:  73] Vega specification outputted as: spec.json
+2017-10-23 04:31:55,665 INFO     [main] [<module>:  78] Starting Script
+2017-10-23 04:31:55,666 ERROR    [main] [<module>: 114] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 111, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 66, in run
+    data, columns = self.convert_csv_to_dict(data_file, columns)
+  File "main.py", line 41, in convert_csv_to_dict
+    reader = csv.DictReader(open(data_file, encoding='utf-8-sig'))
+FileNotFoundError: [Errno 2] No such file or directory: 'examples/example1_barchart.json'
+
+2017-10-23 04:31:55,667 INFO     [main] [<module>: 115] Ending Script Unsuccessfully
+2017-10-23 04:32:13,431 INFO     [main] [<module>:  78] Starting Script
+2017-10-23 04:32:13,433 INFO     [model] [build:  27] Building Vega Specification for a bar chart...
+2017-10-23 04:32:13,434 INFO     [model] [build:  43] Done Building
+2017-10-23 04:32:13,434 INFO     [main] [run:  73] Vega specification outputted as: spec.json
+2017-10-23 04:33:37,363 INFO     [main] [<module>:  78] Starting Script
+2017-10-23 04:33:37,365 INFO     [model] [build:  27] Building Vega Specification for a bar chart...
+2017-10-23 04:33:37,366 INFO     [model] [build:  43] Done Building
+2017-10-23 04:33:37,366 INFO     [main] [run:  73] Vega specification outputted as: spec.json
+2017-10-23 04:40:05,723 INFO     [main] [<module>:  78] Starting Script
+2017-10-23 04:40:05,728 INFO     [model] [build:  49] Building Vega Specification for a scatter plot...
+2017-10-23 04:40:05,740 INFO     [model] [build:  67] Done Building
+2017-10-23 04:40:05,744 INFO     [main] [run:  73] Vega specification outputted as: spec.json
