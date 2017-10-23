@@ -34,10 +34,10 @@ class BarChart(Chart):
 
         # Alternates between columns to fill in relevant X and Y fields in Vega's scale, title, and marks specifications
         for idx in range(0, 6):
-            if not idx % 2:
-                val = self.columns[0]
-            else:
+            if idx % 2:
                 val = self.columns[1]
+            else:
+                val = self.columns[0]
             updateNestedDictByVal(self.spec, None, val)
 
         self.logger.info('Done Building')
@@ -45,7 +45,26 @@ class BarChart(Chart):
         return self.spec
 
 class ScatterPlot(Chart):
-   pass
+   def build(self):
+        self.logger.info('Building Vega Specification...')
+
+        skel_file = open(SKELETONS['ScatterPlot']).read()
+        self.spec = json.loads(skel_file)
+
+        # Fills in data values
+        updateNestedDictByVal(self.spec, None, self.data)
+
+        # Alternates between columns to fill in relevant X and Y fields in Vega's scale, title, and marks specifications
+        for idx in range(0, 10):
+            if idx % 2:
+                val = self.columns[1]
+            else:
+                val = self.columns[1]
+            updateNestedDictByVal(self.spec, None, val)
+
+        self.logger.info('Done Building')
+
+        return self.spec
 
 class LineChart(Chart):
     pass
