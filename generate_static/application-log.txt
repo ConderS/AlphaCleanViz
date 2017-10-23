@@ -1,0 +1,645 @@
+2017-10-23 00:05:05,646 INFO     [main] [<module>:  47] Starting Script
+2017-10-23 00:05:34,531 INFO     [main] [<module>:  48] Starting Script
+2017-10-23 00:06:50,713 INFO     [main] [<module>:  48] Starting Script
+2017-10-23 00:09:01,407 INFO     [main] [<module>:  48] Starting Script
+2017-10-23 00:09:21,546 INFO     [main] [<module>:  48] Starting Script
+2017-10-23 00:10:39,920 INFO     [main] [<module>:  48] Starting Script
+2017-10-23 00:24:37,007 INFO     [main] [<module>:  47] Starting Script
+2017-10-23 00:24:37,009 ERROR    [main] [<module>:  83] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 80, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 41, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/auto_vega/model.py", line 13, in build
+    logger.info('Building Chart...')
+NameError: name 'logger' is not defined
+
+2017-10-23 00:25:38,620 INFO     [main] [<module>:  47] Starting Script
+2017-10-23 00:25:38,622 INFO     [model] [build:  13] Building Chart...
+2017-10-23 00:25:38,622 ERROR    [main] [<module>:  83] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 80, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 41, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/auto_vega/model.py", line 15, in build
+    self.skeleton = json.loads(open('barchart.json').read())[0]
+FileNotFoundError: [Errno 2] No such file or directory: 'barchart.json'
+
+2017-10-23 00:25:48,609 INFO     [main] [<module>:  47] Starting Script
+2017-10-23 00:25:48,610 INFO     [model] [build:  13] Building Chart...
+2017-10-23 00:25:48,611 ERROR    [main] [<module>:  83] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 80, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 41, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/auto_vega/model.py", line 15, in build
+    self.skeleton = json.loads(open('skeletons/barchart.json').read())[0]
+KeyError: 0
+
+2017-10-23 00:26:27,561 INFO     [main] [<module>:  47] Starting Script
+2017-10-23 00:26:27,563 INFO     [model] [build:  13] Building Chart...
+2017-10-23 00:26:27,564 ERROR    [main] [<module>:  83] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 80, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 41, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/auto_vega/model.py", line 15, in build
+    self.skeleton = json.loads(open('skeletons/barchart.json').read())[0]
+KeyError: 0
+
+2017-10-23 00:26:27,564 INFO     [main] [<module>:  84] Ending Script Unsuccessfully
+2017-10-23 00:28:08,365 INFO     [main] [<module>:  47] Starting Script
+2017-10-23 00:28:08,367 INFO     [model] [build:  13] Building Chart...
+2017-10-23 00:28:08,367 ERROR    [main] [<module>:  83] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 80, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 41, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/auto_vega/model.py", line 16, in build
+    skel_content = skel_file.read()
+AttributeError: 'str' object has no attribute 'read'
+
+2017-10-23 00:28:08,368 INFO     [main] [<module>:  84] Ending Script Unsuccessfully
+2017-10-23 00:28:30,010 INFO     [main] [<module>:  47] Starting Script
+2017-10-23 00:28:30,011 INFO     [model] [build:  13] Building Chart...
+2017-10-23 00:28:30,012 ERROR    [main] [<module>:  83] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 80, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 41, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/auto_vega/model.py", line 18, in build
+    print('Skeleton: ', skeleton)
+NameError: name 'skeleton' is not defined
+
+2017-10-23 00:28:30,012 INFO     [main] [<module>:  84] Ending Script Unsuccessfully
+2017-10-23 00:28:36,221 INFO     [main] [<module>:  47] Starting Script
+2017-10-23 00:28:36,223 INFO     [model] [build:  13] Building Chart...
+2017-10-23 00:37:43,035 INFO     [main] [<module>:  47] Starting Script
+2017-10-23 00:37:43,037 INFO     [model] [build:  15] Building Chart...
+2017-10-23 00:37:43,037 ERROR    [main] [<module>:  83] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 80, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 41, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/auto_vega/model.py", line 24, in build
+    self.spec['scales'][0]['domain']['field'] = columns[0]
+NameError: name 'columns' is not defined
+
+2017-10-23 00:37:43,038 INFO     [main] [<module>:  84] Ending Script Unsuccessfully
+2017-10-23 00:38:10,657 INFO     [main] [<module>:  47] Starting Script
+2017-10-23 00:38:10,659 INFO     [model] [build:  15] Building Chart...
+2017-10-23 00:38:10,660 ERROR    [main] [<module>:  83] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 80, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 41, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/auto_vega/model.py", line 28, in build
+    self.spec['scales'][1]['domain']['field'] = columns[1]
+NameError: name 'columns' is not defined
+
+2017-10-23 00:38:10,660 INFO     [main] [<module>:  84] Ending Script Unsuccessfully
+2017-10-23 00:38:18,798 INFO     [main] [<module>:  47] Starting Script
+2017-10-23 00:38:18,800 INFO     [model] [build:  15] Building Chart...
+2017-10-23 00:38:18,801 ERROR    [main] [<module>:  83] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 80, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 41, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/auto_vega/model.py", line 31, in build
+    print('Vega Spec: ', spec)
+NameError: name 'spec' is not defined
+
+2017-10-23 00:38:18,801 INFO     [main] [<module>:  84] Ending Script Unsuccessfully
+2017-10-23 00:38:24,796 INFO     [main] [<module>:  47] Starting Script
+2017-10-23 00:38:24,797 INFO     [model] [build:  15] Building Chart...
+2017-10-23 00:40:57,573 INFO     [main] [<module>:  48] Starting Script
+2017-10-23 00:40:57,574 INFO     [model] [build:  15] Building Chart...
+2017-10-23 00:40:57,574 ERROR    [main] [<module>:  84] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 81, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 44, in run
+    json.dumps(self.vega_json, vega_spec)
+NameError: name 'json' is not defined
+
+2017-10-23 00:40:57,575 INFO     [main] [<module>:  85] Ending Script Unsuccessfully
+2017-10-23 00:41:04,976 INFO     [main] [<module>:  49] Starting Script
+2017-10-23 00:41:04,977 INFO     [model] [build:  15] Building Chart...
+2017-10-23 00:41:04,978 ERROR    [main] [<module>:  85] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 82, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 45, in run
+    json.dumps(self.vega_json, vega_spec)
+TypeError: dumps() takes 1 positional argument but 2 were given
+
+2017-10-23 00:41:04,978 INFO     [main] [<module>:  86] Ending Script Unsuccessfully
+2017-10-23 00:41:45,777 INFO     [main] [<module>:  49] Starting Script
+2017-10-23 00:41:45,778 INFO     [model] [build:  15] Building Chart...
+2017-10-23 00:54:17,040 INFO     [main] [<module>:  49] Starting Script
+2017-10-23 00:54:17,042 INFO     [model] [build:  17] Building Chart...
+2017-10-23 00:54:17,043 ERROR    [main] [<module>:  85] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 82, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 42, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/auto_vega/model.py", line 23, in build
+    updateNestedDict(self.spec, 'url', self.data_file)
+NameError: name 'updateNestedDict' is not defined
+
+2017-10-23 00:54:17,043 INFO     [main] [<module>:  86] Ending Script Unsuccessfully
+2017-10-23 00:54:43,470 INFO     [main] [<module>:  49] Starting Script
+2017-10-23 00:54:43,471 INFO     [model] [build:  17] Building Chart...
+2017-10-23 00:57:06,112 INFO     [main] [<module>:  52] Starting Script
+2017-10-23 00:57:06,114 INFO     [model] [build:  17] Building Vega Specification...
+2017-10-23 00:57:06,114 INFO     [model] [build:  33] Done Building
+2017-10-23 00:57:06,115 ERROR    [main] [<module>:  88] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 85, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 47, in run
+    self.logger.info('Vega specification outputted as: ' + output_file)
+AttributeError: 'Pipeline' object has no attribute 'logger'
+
+2017-10-23 00:57:06,115 INFO     [main] [<module>:  89] Ending Script Unsuccessfully
+2017-10-23 00:57:27,408 INFO     [main] [<module>:  52] Starting Script
+2017-10-23 00:57:27,409 INFO     [model] [build:  17] Building Vega Specification...
+2017-10-23 00:57:27,410 INFO     [model] [build:  33] Done Building
+2017-10-23 00:57:27,410 INFO     [main] [run:  47] Vega specification outputted as: spec.json
+2017-10-23 00:58:40,781 INFO     [main] [<module>:  52] Starting Script
+2017-10-23 00:58:40,782 INFO     [model] [build:  17] Building Vega Specification...
+2017-10-23 00:58:40,783 ERROR    [main] [<module>:  88] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 85, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 42, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/auto_vega/model.py", line 23, in build
+    updateNestedDict(self.spec, 'url', self.data_file)
+  File "/Users/conder/Desktop/auto_vega/utils.py", line 5, in updateNestedDict
+    item = _finditem(v, key, new_val)
+NameError: name '_finditem' is not defined
+
+2017-10-23 00:58:40,784 INFO     [main] [<module>:  89] Ending Script Unsuccessfully
+2017-10-23 00:58:52,559 INFO     [main] [<module>:  52] Starting Script
+2017-10-23 00:58:52,561 INFO     [model] [build:  17] Building Vega Specification...
+2017-10-23 00:58:52,562 ERROR    [main] [<module>:  88] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 85, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 42, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/auto_vega/model.py", line 23, in build
+    updateNestedDict(self.spec, 'url', self.data_file)
+  File "/Users/conder/Desktop/auto_vega/utils.py", line 5, in updateNestedDict
+    item = updateNestedDict(v, key, new_val)
+  File "/Users/conder/Desktop/auto_vega/utils.py", line 3, in updateNestedDict
+    for k, v in obj.items():
+AttributeError: 'list' object has no attribute 'items'
+
+2017-10-23 00:58:52,562 INFO     [main] [<module>:  89] Ending Script Unsuccessfully
+2017-10-23 01:02:44,930 INFO     [main] [<module>:  52] Starting Script
+2017-10-23 01:02:44,932 INFO     [model] [build:  17] Building Vega Specification...
+2017-10-23 01:02:44,932 ERROR    [main] [<module>:  88] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 85, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 42, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/auto_vega/model.py", line 23, in build
+    updateNestedDict(self.spec, 'url', self.data_file)
+  File "/Users/conder/Desktop/auto_vega/utils.py", line 10, in updateNestedDict
+    _recurseObj(v, key, new_val)
+  File "/Users/conder/Desktop/auto_vega/utils.py", line 17, in _recurseObj
+    item = updateNestedDict(obj, key, new_val)
+  File "/Users/conder/Desktop/auto_vega/utils.py", line 13, in updateNestedDict
+    _recurseObj(v, key, new_val)
+UnboundLocalError: local variable 'v' referenced before assignment
+
+2017-10-23 01:02:44,933 INFO     [main] [<module>:  89] Ending Script Unsuccessfully
+2017-10-23 01:03:19,929 INFO     [main] [<module>:  52] Starting Script
+2017-10-23 01:03:19,931 INFO     [model] [build:  17] Building Vega Specification...
+2017-10-23 01:03:19,931 INFO     [model] [build:  33] Done Building
+2017-10-23 01:03:19,932 INFO     [main] [run:  47] Vega specification outputted as: spec.json
+2017-10-23 01:18:33,835 INFO     [main] [<module>:  52] Starting Script
+2017-10-23 01:18:33,836 INFO     [model] [build:  17] Building Vega Specification...
+2017-10-23 01:18:33,837 ERROR    [main] [<module>:  88] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 85, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 42, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/auto_vega/model.py", line 23, in build
+    updateNestedDictByVal(self.spec, None, self.data_file)
+  File "/Users/conder/Desktop/auto_vega/utils.py", line 24, in updateNestedDictByVal
+    _recurseObj(v, val, new_val)
+NameError: name '_recurseObj' is not defined
+
+2017-10-23 01:18:33,837 INFO     [main] [<module>:  89] Ending Script Unsuccessfully
+2017-10-23 01:18:46,822 INFO     [main] [<module>:  52] Starting Script
+2017-10-23 01:18:46,823 INFO     [model] [build:  17] Building Vega Specification...
+2017-10-23 01:18:46,824 ERROR    [main] [<module>:  88] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 85, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 42, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/auto_vega/model.py", line 23, in build
+    updateNestedDictByVal(self.spec, None, self.data_file)
+  File "/Users/conder/Desktop/auto_vega/utils.py", line 24, in updateNestedDictByVal
+    _recurseObjByVal(v, val, new_val)
+  File "/Users/conder/Desktop/auto_vega/utils.py", line 31, in _recurseObjByVal
+    key = updateNestedDict(obj, val, new_val)
+NameError: name 'updateNestedDict' is not defined
+
+2017-10-23 01:18:46,824 INFO     [main] [<module>:  89] Ending Script Unsuccessfully
+2017-10-23 01:18:55,945 INFO     [main] [<module>:  52] Starting Script
+2017-10-23 01:18:55,946 INFO     [model] [build:  17] Building Vega Specification...
+2017-10-23 01:18:55,947 ERROR    [main] [<module>:  88] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 85, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 42, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/auto_vega/model.py", line 23, in build
+    updateNestedDictByVal(self.spec, None, self.data_file)
+  File "/Users/conder/Desktop/auto_vega/utils.py", line 24, in updateNestedDictByVal
+    _recurseObjByVal(v, val, new_val)
+  File "/Users/conder/Desktop/auto_vega/utils.py", line 31, in _recurseObjByVal
+    key = updateNestedDictByVal(obj, val, new_val)
+  File "/Users/conder/Desktop/auto_vega/utils.py", line 18, in updateNestedDictByVal
+    for k, v in obj.items():
+AttributeError: 'list' object has no attribute 'items'
+
+2017-10-23 01:18:55,947 INFO     [main] [<module>:  89] Ending Script Unsuccessfully
+2017-10-23 01:19:45,588 INFO     [main] [<module>:  52] Starting Script
+2017-10-23 01:19:45,589 INFO     [model] [build:  17] Building Vega Specification...
+2017-10-23 01:19:45,589 INFO     [model] [build:  33] Done Building
+2017-10-23 01:19:45,590 INFO     [main] [run:  47] Vega specification outputted as: spec.json
+2017-10-23 01:22:17,877 INFO     [main] [<module>:  52] Starting Script
+2017-10-23 01:22:17,878 INFO     [model] [build:  17] Building Vega Specification...
+2017-10-23 01:22:17,879 ERROR    [main] [<module>:  88] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 85, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 42, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/auto_vega/model.py", line 26, in build
+    updatedNestedDictByVal(self.spec, None, self.columns[0])
+NameError: name 'updatedNestedDictByVal' is not defined
+
+2017-10-23 01:22:17,879 INFO     [main] [<module>:  89] Ending Script Unsuccessfully
+2017-10-23 01:22:52,706 INFO     [main] [<module>:  52] Starting Script
+2017-10-23 01:22:52,708 INFO     [model] [build:  17] Building Vega Specification...
+2017-10-23 01:22:52,708 INFO     [model] [build:  38] Done Building
+2017-10-23 01:22:52,708 INFO     [main] [run:  47] Vega specification outputted as: spec.json
+2017-10-23 01:29:45,653 INFO     [main] [<module>:  52] Starting Script
+2017-10-23 01:29:45,655 INFO     [model] [build:  17] Building Vega Specification...
+2017-10-23 01:29:45,655 INFO     [model] [build:  38] Done Building
+2017-10-23 01:29:45,655 INFO     [main] [run:  47] Vega specification outputted as: spec.json
+2017-10-23 01:33:49,124 INFO     [main] [<module>:  52] Starting Script
+2017-10-23 01:33:49,125 INFO     [model] [build:  17] Building Vega Specification...
+2017-10-23 01:33:49,126 INFO     [model] [build:  38] Done Building
+2017-10-23 01:33:49,126 INFO     [main] [run:  47] Vega specification outputted as: spec.json
+2017-10-23 01:34:23,047 INFO     [main] [<module>:  52] Starting Script
+2017-10-23 01:34:23,049 INFO     [model] [build:  17] Building Vega Specification...
+2017-10-23 01:34:23,049 INFO     [model] [build:  38] Done Building
+2017-10-23 01:34:23,050 INFO     [main] [run:  47] Vega specification outputted as: spec.json
+2017-10-23 01:36:41,137 INFO     [main] [<module>:  52] Starting Script
+2017-10-23 01:36:41,138 INFO     [model] [build:  17] Building Vega Specification...
+2017-10-23 01:36:41,139 INFO     [model] [build:  38] Done Building
+2017-10-23 01:36:41,139 INFO     [main] [run:  47] Vega specification outputted as: spec.json
+2017-10-23 01:37:07,138 INFO     [main] [<module>:  52] Starting Script
+2017-10-23 01:37:07,139 INFO     [model] [build:  17] Building Vega Specification...
+2017-10-23 01:37:07,139 INFO     [model] [build:  38] Done Building
+2017-10-23 01:37:07,140 INFO     [main] [run:  47] Vega specification outputted as: spec.json
+2017-10-23 01:43:59,263 INFO     [main] [<module>:  52] Starting Script
+2017-10-23 01:43:59,264 INFO     [model] [build:  17] Building Vega Specification...
+2017-10-23 01:43:59,264 INFO     [model] [build:  44] Done Building
+2017-10-23 01:43:59,265 INFO     [main] [run:  47] Vega specification outputted as: spec.json
+2017-10-23 01:50:41,203 INFO     [main] [<module>:  52] Starting Script
+2017-10-23 01:50:41,204 INFO     [model] [build:  17] Building Vega Specification...
+2017-10-23 01:50:41,205 ERROR    [main] [<module>:  88] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 85, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 42, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/auto_vega/model.py", line 24, in build
+    data = json.loads(loaded_data)
+  File "/Users/conder/anaconda/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/Users/conder/anaconda/lib/python3.6/json/decoder.py", line 342, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 32 (char 31)
+
+2017-10-23 01:50:41,205 INFO     [main] [<module>:  89] Ending Script Unsuccessfully
+2017-10-23 01:52:13,181 INFO     [main] [<module>:  52] Starting Script
+2017-10-23 01:52:13,182 INFO     [model] [build:  17] Building Vega Specification...
+2017-10-23 01:52:13,182 INFO     [model] [build:  48] Done Building
+2017-10-23 01:52:13,183 INFO     [main] [run:  47] Vega specification outputted as: spec.json
+2017-10-23 01:53:24,567 INFO     [main] [<module>:  52] Starting Script
+2017-10-23 01:53:24,568 INFO     [model] [build:  17] Building Vega Specification...
+2017-10-23 01:53:24,569 ERROR    [main] [<module>:  88] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 85, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 42, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/auto_vega/model.py", line 19, in build
+    skel_file = open('skeletons/barchart_simple.json').read()
+FileNotFoundError: [Errno 2] No such file or directory: 'skeletons/barchart_simple.json'
+
+2017-10-23 01:53:24,569 INFO     [main] [<module>:  89] Ending Script Unsuccessfully
+2017-10-23 01:53:40,301 INFO     [main] [<module>:  52] Starting Script
+2017-10-23 01:53:40,302 INFO     [model] [build:  17] Building Vega Specification...
+2017-10-23 01:53:40,303 INFO     [model] [build:  48] Done Building
+2017-10-23 01:53:40,304 INFO     [main] [run:  47] Vega specification outputted as: spec.json
+2017-10-23 02:00:16,046 INFO     [main] [<module>:  52] Starting Script
+2017-10-23 02:00:16,047 INFO     [model] [build:  24] Building Vega Specification...
+2017-10-23 02:00:16,048 ERROR    [main] [<module>:  88] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 85, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 42, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/auto_vega/model.py", line 26, in build
+    skel_file = open(Skeletons.BarChart).read()
+TypeError: expected str, bytes or os.PathLike object, not Skeletons
+
+2017-10-23 02:00:16,048 INFO     [main] [<module>:  89] Ending Script Unsuccessfully
+2017-10-23 02:00:54,377 INFO     [main] [<module>:  52] Starting Script
+2017-10-23 02:00:54,378 INFO     [model] [build:  24] Building Vega Specification...
+2017-10-23 02:00:54,379 ERROR    [main] [<module>:  88] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 85, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 42, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/auto_vega/model.py", line 26, in build
+    skel_file = open(str(Skeletons.BarChart)).read()
+FileNotFoundError: [Errno 2] No such file or directory: 'Skeletons.BarChart'
+
+2017-10-23 02:00:54,379 INFO     [main] [<module>:  89] Ending Script Unsuccessfully
+2017-10-23 02:01:14,369 INFO     [main] [<module>:  52] Starting Script
+2017-10-23 02:01:14,370 INFO     [model] [build:  24] Building Vega Specification...
+2017-10-23 02:01:14,370 ERROR    [main] [<module>:  88] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 85, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 42, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/auto_vega/model.py", line 26, in build
+    skel_file = open(Skeletons.BarChart).read()
+TypeError: expected str, bytes or os.PathLike object, not Skeletons
+
+2017-10-23 02:01:14,370 INFO     [main] [<module>:  89] Ending Script Unsuccessfully
+2017-10-23 02:02:34,544 INFO     [main] [<module>:  52] Starting Script
+2017-10-23 02:02:34,545 INFO     [model] [build:  27] Building Vega Specification...
+2017-10-23 02:02:34,546 INFO     [model] [build:  58] Done Building
+2017-10-23 02:02:34,546 INFO     [main] [run:  47] Vega specification outputted as: spec.json
+2017-10-23 02:06:12,796 INFO     [main] [<module>:  52] Starting Script
+2017-10-23 02:06:12,797 INFO     [model] [build:  27] Building Vega Specification...
+2017-10-23 02:06:12,798 ERROR    [main] [<module>:  88] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 85, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 42, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/auto_vega/model.py", line 40, in build
+    for idx, _ in enumerate(5):
+TypeError: 'int' object is not iterable
+
+2017-10-23 02:06:12,798 INFO     [main] [<module>:  89] Ending Script Unsuccessfully
+2017-10-23 02:06:27,007 INFO     [main] [<module>:  52] Starting Script
+2017-10-23 02:06:27,008 INFO     [model] [build:  27] Building Vega Specification...
+2017-10-23 02:06:27,009 ERROR    [main] [<module>:  88] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 85, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 42, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/auto_vega/model.py", line 40, in build
+    for idx, _ in range(5):
+TypeError: 'int' object is not iterable
+
+2017-10-23 02:06:27,009 INFO     [main] [<module>:  89] Ending Script Unsuccessfully
+2017-10-23 02:06:58,755 INFO     [main] [<module>:  52] Starting Script
+2017-10-23 02:06:58,757 INFO     [model] [build:  27] Building Vega Specification...
+2017-10-23 02:06:58,758 ERROR    [main] [<module>:  88] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 85, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 42, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/auto_vega/model.py", line 40, in build
+    for idx, _ in range(0, 5):
+TypeError: 'int' object is not iterable
+
+2017-10-23 02:06:58,758 INFO     [main] [<module>:  89] Ending Script Unsuccessfully
+2017-10-23 02:07:11,044 INFO     [main] [<module>:  52] Starting Script
+2017-10-23 02:07:11,045 INFO     [model] [build:  27] Building Vega Specification...
+2017-10-23 02:07:11,046 INFO     [model] [build:  66] Done Building
+2017-10-23 02:07:11,046 INFO     [main] [run:  47] Vega specification outputted as: spec.json
+2017-10-23 02:08:02,586 INFO     [main] [<module>:  52] Starting Script
+2017-10-23 02:08:02,587 INFO     [model] [build:  27] Building Vega Specification...
+2017-10-23 02:08:02,588 INFO     [model] [build:  66] Done Building
+2017-10-23 02:08:02,588 INFO     [main] [run:  47] Vega specification outputted as: spec.json
+2017-10-23 02:57:59,671 INFO     [main] [<module>:  69] Starting Script
+2017-10-23 02:57:59,673 ERROR    [main] [<module>: 105] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 102, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 42, in run
+    data, columns = convert_csv_to_dict(data_file, columns)
+NameError: name 'convert_csv_to_dict' is not defined
+
+2017-10-23 02:57:59,673 INFO     [main] [<module>: 106] Ending Script Unsuccessfully
+2017-10-23 02:58:32,715 INFO     [main] [<module>:  70] Starting Script
+2017-10-23 02:58:32,717 ERROR    [main] [<module>: 106] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 103, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 58, in run
+    data, columns = convert_csv_to_dict(data_file, columns)
+NameError: name 'convert_csv_to_dict' is not defined
+
+2017-10-23 02:58:32,717 INFO     [main] [<module>: 107] Ending Script Unsuccessfully
+2017-10-23 02:59:28,543 INFO     [main] [<module>:  70] Starting Script
+2017-10-23 02:59:28,545 ERROR    [main] [<module>: 106] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 103, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 58, in run
+    data, columns = self.convert_csv_to_dict(data_file, columns)
+  File "main.py", line 44, in convert_csv_to_dict
+    for line in reader:
+  File "/Users/conder/anaconda/lib/python3.6/csv.py", line 111, in __next__
+    self.fieldnames
+  File "/Users/conder/anaconda/lib/python3.6/csv.py", line 98, in fieldnames
+    self._fieldnames = next(self.reader)
+_csv.Error: iterator should return strings, not bytes (did you open the file in text mode?)
+
+2017-10-23 02:59:28,545 INFO     [main] [<module>: 107] Ending Script Unsuccessfully
+2017-10-23 03:01:11,361 INFO     [main] [<module>:  70] Starting Script
+2017-10-23 03:01:11,362 INFO     [model] [build:  27] Building Vega Specification...
+2017-10-23 03:01:11,363 INFO     [model] [build:  43] Done Building
+2017-10-23 03:01:11,364 INFO     [main] [run:  65] Vega specification outputted as: spec.json
+2017-10-23 03:05:37,204 INFO     [main] [<module>:  70] Starting Script
+2017-10-23 03:05:37,205 ERROR    [main] [<module>: 106] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 103, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 58, in run
+    data, columns = self.convert_csv_to_dict(data_file, columns)
+  File "main.py", line 45, in convert_csv_to_dict
+    yield data.append({unicode(key, 'utf-8'):unicode(value, 'utf-8') for key, value in row.iteritems()})
+NameError: name 'row' is not defined
+
+2017-10-23 03:05:37,206 INFO     [main] [<module>: 107] Ending Script Unsuccessfully
+2017-10-23 03:05:45,387 INFO     [main] [<module>:  70] Starting Script
+2017-10-23 03:05:45,389 ERROR    [main] [<module>: 106] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 103, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 58, in run
+    data, columns = self.convert_csv_to_dict(data_file, columns)
+  File "main.py", line 45, in convert_csv_to_dict
+    yield data.append({unicode(key, 'utf-8'):unicode(value, 'utf-8') for key, value in row.iteritems()})
+AttributeError: 'collections.OrderedDict' object has no attribute 'iteritems'
+
+2017-10-23 03:05:45,389 INFO     [main] [<module>: 107] Ending Script Unsuccessfully
+2017-10-23 03:11:22,007 INFO     [main] [<module>:  64] Starting Script
+2017-10-23 03:11:22,032 ERROR    [main] [<module>: 100] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 97, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 52, in run
+    data, columns = self.convert_csv_to_dict(data_file, columns)
+TypeError: 'NoneType' object is not iterable
+
+2017-10-23 03:11:22,032 INFO     [main] [<module>: 101] Ending Script Unsuccessfully
+2017-10-23 03:13:54,418 INFO     [main] [<module>:  64] Starting Script
+2017-10-23 03:13:54,422 ERROR    [main] [<module>: 100] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 97, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 52, in run
+    data, columns = self.convert_csv_to_dict(data_file, columns)
+TypeError: 'NoneType' object is not iterable
+
+2017-10-23 03:13:54,422 INFO     [main] [<module>: 101] Ending Script Unsuccessfully
+2017-10-23 03:18:34,716 INFO     [main] [<module>:  70] Starting Script
+2017-10-23 03:18:34,718 ERROR    [main] [<module>: 106] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 103, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 58, in run
+    data, columns = self.convert_csv_to_dict(data_file, columns)
+  File "main.py", line 45, in convert_csv_to_dict
+    data.append({unicode(key, 'utf-8'):unicode(value, 'utf-8') for key, value in row.iteritems()})
+NameError: name 'row' is not defined
+
+2017-10-23 03:18:34,718 INFO     [main] [<module>: 107] Ending Script Unsuccessfully
+2017-10-23 03:18:40,884 INFO     [main] [<module>:  70] Starting Script
+2017-10-23 03:18:40,885 ERROR    [main] [<module>: 106] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 103, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 58, in run
+    data, columns = self.convert_csv_to_dict(data_file, columns)
+  File "main.py", line 45, in convert_csv_to_dict
+    data.append({unicode(key, 'utf-8'):unicode(value, 'utf-8') for key, value in line.iteritems()})
+AttributeError: 'collections.OrderedDict' object has no attribute 'iteritems'
+
+2017-10-23 03:18:40,885 INFO     [main] [<module>: 107] Ending Script Unsuccessfully
+2017-10-23 03:19:23,690 INFO     [main] [<module>:  70] Starting Script
+2017-10-23 03:19:23,691 ERROR    [main] [<module>: 106] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 103, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 58, in run
+    data, columns = self.convert_csv_to_dict(data_file, columns)
+  File "main.py", line 45, in convert_csv_to_dict
+    data.append({unicode(key, 'utf-8'):unicode(value, 'utf-8') for key, value in line.items()})
+  File "main.py", line 45, in <dictcomp>
+    data.append({unicode(key, 'utf-8'):unicode(value, 'utf-8') for key, value in line.items()})
+NameError: name 'unicode' is not defined
+
+2017-10-23 03:19:23,692 INFO     [main] [<module>: 107] Ending Script Unsuccessfully
+2017-10-23 03:20:24,267 INFO     [main] [<module>:  70] Starting Script
+2017-10-23 03:20:24,269 ERROR    [main] [<module>: 106] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 103, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 58, in run
+    data, columns = self.convert_csv_to_dict(data_file, columns)
+  File "main.py", line 45, in convert_csv_to_dict
+    data.append({str(key, 'utf-8'):str(value, 'utf-8') for key, value in line.items()})
+  File "main.py", line 45, in <dictcomp>
+    data.append({str(key, 'utf-8'):str(value, 'utf-8') for key, value in line.items()})
+TypeError: decoding str is not supported
+
+2017-10-23 03:20:24,269 INFO     [main] [<module>: 107] Ending Script Unsuccessfully
+2017-10-23 03:20:35,847 INFO     [main] [<module>:  70] Starting Script
+2017-10-23 03:20:35,848 ERROR    [main] [<module>: 106] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 103, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 58, in run
+    data, columns = self.convert_csv_to_dict(data_file, columns)
+  File "main.py", line 45, in convert_csv_to_dict
+    data.append({str.decode(key, 'utf-8'):str.decode(value, 'utf-8') for key, value in line.items()})
+  File "main.py", line 45, in <dictcomp>
+    data.append({str.decode(key, 'utf-8'):str.decode(value, 'utf-8') for key, value in line.items()})
+AttributeError: type object 'str' has no attribute 'decode'
+
+2017-10-23 03:20:35,848 INFO     [main] [<module>: 107] Ending Script Unsuccessfully
+2017-10-23 03:21:16,339 INFO     [main] [<module>:  70] Starting Script
+2017-10-23 03:21:16,341 INFO     [model] [build:  27] Building Vega Specification...
+2017-10-23 03:21:16,341 INFO     [model] [build:  43] Done Building
+2017-10-23 03:21:16,342 INFO     [main] [run:  65] Vega specification outputted as: spec.json
+2017-10-23 03:21:31,185 INFO     [main] [<module>:  70] Starting Script
+2017-10-23 03:21:31,187 INFO     [model] [build:  27] Building Vega Specification...
+2017-10-23 03:21:31,187 INFO     [model] [build:  43] Done Building
+2017-10-23 03:21:31,188 INFO     [main] [run:  65] Vega specification outputted as: spec.json
+2017-10-23 03:23:01,925 INFO     [main] [<module>:  70] Starting Script
+2017-10-23 03:23:01,937 ERROR    [main] [<module>: 106] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 103, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 58, in run
+    data, columns = self.convert_csv_to_dict(data_file, columns)
+  File "main.py", line 44, in convert_csv_to_dict
+    for line in reader:
+  File "/Users/conder/anaconda/lib/python3.6/csv.py", line 111, in __next__
+    self.fieldnames
+  File "/Users/conder/anaconda/lib/python3.6/csv.py", line 98, in fieldnames
+    self._fieldnames = next(self.reader)
+  File "/Users/conder/anaconda/lib/python3.6/codecs.py", line 321, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+  File "/Users/conder/anaconda/lib/python3.6/encodings/utf_16.py", line 67, in _buffer_decode
+    raise UnicodeError("UTF-16 stream does not start with BOM")
+UnicodeError: UTF-16 stream does not start with BOM
+
+2017-10-23 03:23:01,937 INFO     [main] [<module>: 107] Ending Script Unsuccessfully
+2017-10-23 03:23:29,298 INFO     [main] [<module>:  70] Starting Script
+2017-10-23 03:23:29,308 ERROR    [main] [<module>: 106] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 103, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 58, in run
+    data, columns = self.convert_csv_to_dict(data_file, columns)
+  File "main.py", line 44, in convert_csv_to_dict
+    for line in reader:
+  File "/Users/conder/anaconda/lib/python3.6/csv.py", line 111, in __next__
+    self.fieldnames
+  File "/Users/conder/anaconda/lib/python3.6/csv.py", line 98, in fieldnames
+    self._fieldnames = next(self.reader)
+  File "/Users/conder/anaconda/lib/python3.6/encodings/ascii.py", line 26, in decode
+    return codecs.ascii_decode(input, self.errors)[0]
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xef in position 0: ordinal not in range(128)
+
+2017-10-23 03:23:29,308 INFO     [main] [<module>: 107] Ending Script Unsuccessfully
+2017-10-23 03:24:06,401 INFO     [main] [<module>:  72] Starting Script
+2017-10-23 03:24:06,403 ERROR    [main] [<module>: 108] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 105, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 60, in run
+    data, columns = self.convert_csv_to_dict(data_file, columns)
+  File "main.py", line 45, in convert_csv_to_dict
+    line.strip('\ufeff\"')
+AttributeError: 'collections.OrderedDict' object has no attribute 'strip'
+
+2017-10-23 03:24:06,403 INFO     [main] [<module>: 109] Ending Script Unsuccessfully
+2017-10-23 03:24:35,068 INFO     [main] [<module>:  73] Starting Script
+2017-10-23 03:24:35,070 ERROR    [main] [<module>: 109] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 106, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 61, in run
+    data, columns = self.convert_csv_to_dict(data_file, columns)
+  File "main.py", line 46, in convert_csv_to_dict
+    line.strip('\ufeff\"')
+AttributeError: 'collections.OrderedDict' object has no attribute 'strip'
+
+2017-10-23 03:24:35,070 INFO     [main] [<module>: 110] Ending Script Unsuccessfully
+2017-10-23 03:24:48,322 INFO     [main] [<module>:  73] Starting Script
+2017-10-23 03:24:48,324 INFO     [model] [build:  27] Building Vega Specification...
+2017-10-23 03:24:48,325 INFO     [model] [build:  43] Done Building
+2017-10-23 03:24:48,325 INFO     [main] [run:  68] Vega specification outputted as: spec.json
+2017-10-23 03:26:07,571 INFO     [main] [<module>:  73] Starting Script
+2017-10-23 03:26:07,578 INFO     [model] [build:  27] Building Vega Specification...
+2017-10-23 03:26:07,579 INFO     [model] [build:  43] Done Building
+2017-10-23 03:26:07,580 INFO     [main] [run:  68] Vega specification outputted as: spec.json
+2017-10-23 03:27:01,067 INFO     [main] [<module>:  70] Starting Script
+2017-10-23 03:27:01,069 INFO     [model] [build:  27] Building Vega Specification...
+2017-10-23 03:27:01,070 INFO     [model] [build:  43] Done Building
+2017-10-23 03:27:01,070 INFO     [main] [run:  65] Vega specification outputted as: spec.json

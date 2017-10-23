@@ -1,0 +1,87 @@
+{
+  "width": 400,
+  "height": 200,
+  "padding": 5,
+
+  "data": [
+    {
+      "name": "table",
+      "values": null
+    }
+  ],
+
+  "scales": [
+    {
+      "name": "xscale",
+      "type": "band",
+      "domain": {"data": "table", "field": null},
+      "range": "width",
+      "padding": 0.05,
+      "round": true
+    },
+    {
+      "name": "yscale",
+      "domain": {"data": "table", "field": null},
+      "nice": true,
+      "range": "height"
+    }
+  ],
+
+  "axes": [
+    {
+      "scale": "xscale",
+      "orient": "bottom",
+      "labelOverlap": true,
+      "title": null,
+      "zindex": 1,
+      "encode": {
+        "labels": {
+          "update": {
+            "angle": {"value": 270},
+            "align": {"value": "right"},
+            "baseline": {"value": "middle"}
+          }
+        }
+      }
+    },
+    {
+      "scale": "yscale",
+      "orient": "left",
+      "labelOverlap": true,
+      "tickCount": {"signal": "ceil(height/40)"},
+      "title": null,
+      "zindex": 1
+    },
+    {
+      "scale": "yscale",
+      "orient": "left",
+      "domain": false,
+      "grid": true,
+      "labels": false,
+      "maxExtent": 0,
+      "minExtent": 0,
+      "tickCount": {"signal": "ceil(height/40)"},
+      "ticks": false,
+      "zindex": 0,
+      "gridScale": "xscale"
+    }
+  ],
+
+  "marks": [
+    {
+      "type": "rect",
+      "from": {"data":"table"},
+      "encode": {
+        "enter": {
+          "x": {"scale": "xscale", "field": null},
+          "width": {"scale": "xscale", "band": 1},
+          "y": {"scale": "yscale", "field": null},
+          "y2": {"scale": "yscale", "value": 0}
+        },
+        "update": {
+          "fill": {"value": "steelblue"}
+        }
+      }
+    }
+  ]
+}
