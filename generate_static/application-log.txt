@@ -1180,3 +1180,24 @@ TypeError: update_data() takes 3 positional arguments but 4 were given
 2017-10-26 12:12:39,722 INFO     [model] [build:  92] Building Vega Specification for a scatter plot...
 2017-10-26 12:12:39,724 INFO     [model] [update_data:  33] Done Building
 2017-10-26 12:12:39,724 INFO     [main] [run:  78] Vega specification outputted as: spec.json
+2017-10-26 13:00:59,303 INFO     [main] [<module>:  83] Starting Script
+2017-10-26 13:00:59,311 ERROR    [main] [<module>: 119] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 116, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 72, in run
+    self.chart = CHART_MAPPING[chart_type](data, columns)
+KeyError: 'scater'
+
+2017-10-26 13:00:59,311 INFO     [main] [<module>: 120] Ending Script Unsuccessfully
+2017-10-26 13:01:01,325 INFO     [main] [<module>:  83] Starting Script
+2017-10-26 13:01:01,330 INFO     [model] [build:  79] Building Vega Specification for a scatter plot...
+2017-10-26 13:01:01,337 INFO     [model] [update_data:  33] Done Building
+2017-10-26 13:01:01,342 INFO     [main] [run:  78] Vega specification outputted as: spec.json
+2017-10-26 13:01:24,372 INFO     [main] [<module>:  83] Starting Script
+2017-10-26 13:01:24,378 INFO     [model] [build:  79] Building Vega Specification for a scatter plot...
+2017-10-26 13:01:24,385 INFO     [model] [update_data:  33] Done Building
+2017-10-26 13:01:24,391 INFO     [main] [run:  78] Vega specification outputted as: spec.json
+2017-10-26 13:01:44,638 INFO     [main] [<module>:  83] Starting Script
+2017-10-26 13:01:44,644 INFO     [model] [build:  79] Building Vega Specification for a scatter plot...
+2017-10-26 13:01:44,651 INFO     [model] [update_data:  33] Done Building
+2017-10-26 13:01:44,657 INFO     [main] [run:  78] Vega specification outputted as: spec.json

@@ -55,17 +55,25 @@ class ScatterPlot(Chart):
         y_title = self.columns[1]
 
         x_max_domain = -float('inf')
+        x_min_domain = float('inf')
         y_max_domain = -float('inf')
+        y_min_domain = float('inf')
 
         for record in self.data:
             for key, value in record.items():
                 if (key is not None) and (value != 'null'):
                     if key == x_title:
                         x_max_domain = max(x_max_domain, float(value)) 
+                        x_min_domain = min(x_min_domain, float(value))
                     if key == y_title:
                         y_max_domain = max(y_max_domain, float(value)) 
+                        y_min_domain = min(y_min_domain, float(value)) 
 
-        return x_max_domain, y_max_domain
+        x_domain = [x_min_domain, x_max_domain]
+        y_domain = [y_min_domain, y_max_domain]
+
+        return x_domain, y_domain
+
 
     def build(self):
         self.logger.info('Building Vega Specification for a scatter plot...')
@@ -75,9 +83,9 @@ class ScatterPlot(Chart):
 
         data_fields = ['_data_values', '_x_domain', '_y_domain', '_x_title', '_y_title', '_z_title']
 
-        x_max_domain, y_max_domain = self.get_domain()
-        x_domain = [0, x_max_domain]
-        y_domain = [0, y_max_domain]
+        x_domain, y_domain = self.get_domain()
+        x_domain[0] = min(0, x_domain[0])
+        y_domain[0] = min(0, y_domain[0])
         
         new_values = [self.data, x_domain, y_domain, self.columns[0], self.columns[1], self.columns[2]]
 
