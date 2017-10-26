@@ -6,7 +6,7 @@
   "data": [
     {
       "name": "table",
-      "values": null
+      "values": "_data_values"
     }
   ],
 
@@ -14,14 +14,14 @@
     {
       "name": "xscale",
       "type": "band",
-      "domain": null,
+      "domain": {"data": "table", "field": "_x_title"},
       "range": "width",
       "padding": 0.05,
       "round": true
     },
     {
       "name": "yscale",
-      "domain": {"data": "table", "field": null},
+      "domain": {"data": "table", "field": "_y_title"},
       "nice": true,
       "range": "height"
     }
@@ -32,7 +32,7 @@
       "scale": "xscale",
       "orient": "bottom",
       "labelOverlap": true,
-      "title": null,
+      "title": "_x_title",
       "zindex": 1,
       "encode": {
         "labels": {
@@ -73,9 +73,9 @@
       "from": {"data":"table"},
       "encode": {
         "enter": {
-          "x": {"scale": "xscale", "field": null},
+          "x": {"scale": "xscale", "field": "_x_title"},
           "width": {"scale": "xscale", "band": 1},
-          "y": {"scale": "yscale", "field": null},
+          "y": {"scale": "yscale", "field": "_y_title"},
           "y2": {"scale": "yscale", "value": 0}
         },
         "update": {

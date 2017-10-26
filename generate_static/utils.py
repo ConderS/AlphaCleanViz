@@ -19,10 +19,10 @@ def updateNestedDictByVal(obj, val, new_val):
         for k, v in obj.items():
             if obj[k] == val:
                 return k
-            _recurseObjByVal(v, val, new_val):
+            _recurseObjByVal(v, val, new_val)
     else:
         for item in obj:
-            _recurseObjByVal(item, val, new_val):
+            _recurseObjByVal(item, val, new_val)
 
 def _recurseObjByVal(obj, val, new_val):
     if isinstance(obj, list) or isinstance(obj, dict):

@@ -26,6 +26,14 @@ class Chart(object):
     def get_domain(self):
         pass
 
+    def update_data(self, data_fields, new_values):
+        for counter, field in enumerate(data_fields):
+            updateNestedDictByVal(self.spec, field, new_values[counter])
+        
+        self.logger.info('Done Building')
+        return self.spec
+
+
 class BarChart(Chart):
 
     def build(self):
@@ -34,21 +42,10 @@ class BarChart(Chart):
         skel_file = open(SKELETONS['BarChart']).read()
         self.spec = json.loads(skel_file)
 
-        # Defines data values in-line
-        updateNestedDictByVal(self.spec, None, self.data)
+        data_fields = ['_data_values', '_x_title', '_y_title']
+        new_values = [self.data, self.columns[0], self.columns[1]]
 
-        # Alternates between columns to fill in relevant X and Y fields in Vega's scale, title, and marks specifications
-        for idx in range(0, 6):
-            if idx % 2:
-                val = self.columns[1]
-            else:
-                val = self.columns[0]
-            updateNestedDictByVal(self.spec, None, val)
-
-        self.logger.info('Done Building')
-
-        return self.spec
-
+        return self.update_data(data_fields, new_values)
 
 
 class ScatterPlot(Chart):
@@ -76,30 +73,18 @@ class ScatterPlot(Chart):
         skel_file = open(SKELETONS['ScatterPlot']).read()
         self.spec = json.loads(skel_file)
 
-        fill_data_fields = ['_data_values', '_x_domain', '_y_domain', '_x_title', '_y_title', '_z_title']
+        data_fields = ['_data_values', '_x_domain', '_y_domain', '_x_title', '_y_title', '_z_title']
 
         x_max_domain, y_max_domain = self.get_domain()
         x_domain = [0, x_max_domain]
         y_domain = [0, y_max_domain]
         
-        fill_new_values = [self.data, x_domain, y_domain, column[0], column[1], column[2]]
+        new_values = [self.data, x_domain, y_domain, self.columns[0], self.columns[1], self.columns[2]]
 
-        for counter, field in enumerate(fill_data_fields):
-            updateNestedDictByVal(self.spec, field, fill_new_values[counter])
-
-        return self.spec
-
-        
-
-
-        self.logger.info('Done Building')
-
-        return self.spec
-
-
+        return self.update_data(data_fields, new_values)
 
 
 class LineChart(Chart):
 
     def build(self):
-
+        pass

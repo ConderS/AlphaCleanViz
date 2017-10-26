@@ -1136,3 +1136,43 @@ TypeError: ufunc 'multiply' did not contain a loop with signature matching types
 2017-10-26 11:40:27,400 INFO     [model] [build:  74] Building Vega Specification for a scatter plot...
 2017-10-26 11:40:27,412 INFO     [model] [build:  98] Done Building
 2017-10-26 11:40:27,418 INFO     [main] [run:  78] Vega specification outputted as: spec.json
+2017-10-26 11:57:05,206 INFO     [main] [<module>:  83] Starting Script
+2017-10-26 11:57:05,214 INFO     [model] [build:  74] Building Vega Specification for a scatter plot...
+2017-10-26 11:57:05,215 ERROR    [main] [<module>: 119] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 116, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 73, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/alphaclean_interface/generate_static/model.py", line 85, in build
+    fill_new_values = [self.data, x_domain, y_domain, column[0], column[1], column[2]]
+NameError: name 'column' is not defined
+
+2017-10-26 11:57:05,215 INFO     [main] [<module>: 120] Ending Script Unsuccessfully
+2017-10-26 11:57:36,691 INFO     [main] [<module>:  83] Starting Script
+2017-10-26 11:57:36,698 INFO     [model] [build:  74] Building Vega Specification for a scatter plot...
+2017-10-26 11:57:36,707 INFO     [model] [build:  90] Done Building
+2017-10-26 11:57:36,715 INFO     [main] [run:  78] Vega specification outputted as: spec.json
+2017-10-26 12:00:31,698 INFO     [main] [<module>:  83] Starting Script
+2017-10-26 12:00:31,703 INFO     [model] [build:  32] Building Vega Specification for a bar chart...
+2017-10-26 12:00:31,705 INFO     [model] [build:  51] Done Building
+2017-10-26 12:00:31,706 INFO     [main] [run:  78] Vega specification outputted as: spec.json
+2017-10-26 12:03:03,779 INFO     [main] [<module>:  83] Starting Script
+2017-10-26 12:03:03,781 INFO     [model] [build:  40] Building Vega Specification for a bar chart...
+2017-10-26 12:03:03,782 ERROR    [main] [<module>: 119] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 116, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 73, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/alphaclean_interface/generate_static/model.py", line 48, in build
+    return self.update_data(self, data_fields, new_values)
+TypeError: update_data() takes 3 positional arguments but 4 were given
+
+2017-10-26 12:03:03,783 INFO     [main] [<module>: 120] Ending Script Unsuccessfully
+2017-10-26 12:03:15,042 INFO     [main] [<module>:  83] Starting Script
+2017-10-26 12:03:15,043 INFO     [model] [build:  40] Building Vega Specification for a bar chart...
+2017-10-26 12:03:15,045 INFO     [model] [update_data:  33] Done Building
+2017-10-26 12:03:15,045 INFO     [main] [run:  78] Vega specification outputted as: spec.json
+2017-10-26 12:03:30,032 INFO     [main] [<module>:  83] Starting Script
+2017-10-26 12:03:30,037 INFO     [model] [build:  71] Building Vega Specification for a scatter plot...
+2017-10-26 12:03:30,043 INFO     [model] [update_data:  33] Done Building
+2017-10-26 12:03:30,048 INFO     [main] [run:  78] Vega specification outputted as: spec.json
