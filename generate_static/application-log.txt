@@ -826,3 +826,309 @@ FileNotFoundError: [Errno 2] No such file or directory: 'examples/example1_barch
 2017-10-23 04:40:05,728 INFO     [model] [build:  49] Building Vega Specification for a scatter plot...
 2017-10-23 04:40:05,740 INFO     [model] [build:  67] Done Building
 2017-10-23 04:40:05,744 INFO     [main] [run:  73] Vega specification outputted as: spec.json
+2017-10-23 18:03:13,460 INFO     [main] [<module>:  78] Starting Script
+2017-10-23 18:03:13,467 INFO     [model] [build:  49] Building Vega Specification for a scatter plot...
+2017-10-23 18:03:13,477 INFO     [model] [build:  67] Done Building
+2017-10-23 18:03:13,481 INFO     [main] [run:  73] Vega specification outputted as: spec.json
+2017-10-26 10:39:58,784 INFO     [main] [<module>:  83] Starting Script
+2017-10-26 10:39:58,788 INFO     [model] [build:  32] Building Vega Specification for a bar chart...
+2017-10-26 10:39:58,789 ERROR    [main] [<module>: 119] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 116, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 73, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/alphaclean_interface/generate_static/model.py", line 40, in build
+    min_domain, max_domain = get_domain()
+NameError: name 'get_domain' is not defined
+
+2017-10-26 10:39:58,789 INFO     [main] [<module>: 120] Ending Script Unsuccessfully
+2017-10-26 10:40:14,619 INFO     [main] [<module>:  83] Starting Script
+2017-10-26 10:40:14,621 INFO     [model] [build:  32] Building Vega Specification for a bar chart...
+2017-10-26 10:40:14,622 ERROR    [main] [<module>: 119] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 116, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 73, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/alphaclean_interface/generate_static/model.py", line 40, in build
+    min_domain, max_domain = self.get_domain()
+  File "/Users/conder/Desktop/alphaclean_interface/generate_static/model.py", line 65, in get_domain
+    max_domain = max(max_domain, value)
+TypeError: '>' not supported between instances of 'str' and 'float'
+
+2017-10-26 10:40:14,623 INFO     [main] [<module>: 120] Ending Script Unsuccessfully
+2017-10-26 10:40:38,492 INFO     [main] [<module>:  83] Starting Script
+2017-10-26 10:40:38,493 INFO     [model] [build:  32] Building Vega Specification for a bar chart...
+2017-10-26 10:40:38,495 ERROR    [main] [<module>: 119] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 116, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 73, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/alphaclean_interface/generate_static/model.py", line 40, in build
+    min_domain, max_domain = self.get_domain()
+  File "/Users/conder/Desktop/alphaclean_interface/generate_static/model.py", line 65, in get_domain
+    max_domain = max(max_domain, float(value))
+ValueError: could not convert string to float: 'amount'
+
+2017-10-26 10:40:38,495 INFO     [main] [<module>: 120] Ending Script Unsuccessfully
+2017-10-26 10:41:15,223 INFO     [main] [<module>:  83] Starting Script
+2017-10-26 10:41:15,225 INFO     [model] [build:  32] Building Vega Specification for a bar chart...
+2017-10-26 10:41:15,226 ERROR    [main] [<module>: 119] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 116, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 73, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/alphaclean_interface/generate_static/model.py", line 40, in build
+    min_domain, max_domain = self.get_domain()
+  File "/Users/conder/Desktop/alphaclean_interface/generate_static/model.py", line 66, in get_domain
+    max_domain = max(max_domain, float(value))
+ValueError: could not convert string to float: 'amount'
+
+2017-10-26 10:41:15,226 INFO     [main] [<module>: 120] Ending Script Unsuccessfully
+2017-10-26 10:42:04,710 INFO     [main] [<module>:  83] Starting Script
+2017-10-26 10:42:04,712 INFO     [model] [build:  32] Building Vega Specification for a bar chart...
+2017-10-26 10:42:04,713 ERROR    [main] [<module>: 119] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 116, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 73, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/alphaclean_interface/generate_static/model.py", line 40, in build
+    min_domain, max_domain = self.get_domain()
+  File "/Users/conder/Desktop/alphaclean_interface/generate_static/model.py", line 68, in get_domain
+    max_domain = max(max_domain, float(value))
+ValueError: could not convert string to float: 'amount'
+
+2017-10-26 10:42:04,713 INFO     [main] [<module>: 120] Ending Script Unsuccessfully
+2017-10-26 10:42:57,075 INFO     [main] [<module>:  83] Starting Script
+2017-10-26 10:42:57,077 INFO     [model] [build:  32] Building Vega Specification for a bar chart...
+2017-10-26 10:42:57,078 ERROR    [main] [<module>: 119] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 116, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 73, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/alphaclean_interface/generate_static/model.py", line 40, in build
+    min_domain, max_domain = self.get_domain()
+  File "/Users/conder/Desktop/alphaclean_interface/generate_static/model.py", line 65, in get_domain
+    for key, value in record:
+ValueError: too many values to unpack (expected 2)
+
+2017-10-26 10:42:57,078 INFO     [main] [<module>: 120] Ending Script Unsuccessfully
+2017-10-26 10:43:27,006 INFO     [main] [<module>:  83] Starting Script
+2017-10-26 10:43:27,008 INFO     [model] [build:  32] Building Vega Specification for a bar chart...
+2017-10-26 10:43:27,010 ERROR    [main] [<module>: 119] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 116, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 73, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/alphaclean_interface/generate_static/model.py", line 40, in build
+    min_domain, max_domain = self.get_domain()
+  File "/Users/conder/Desktop/alphaclean_interface/generate_static/model.py", line 66, in get_domain
+    for key, value in record:
+ValueError: too many values to unpack (expected 2)
+
+2017-10-26 10:43:27,010 INFO     [main] [<module>: 120] Ending Script Unsuccessfully
+2017-10-26 10:50:38,757 INFO     [main] [<module>:  83] Starting Script
+2017-10-26 10:50:38,759 INFO     [model] [build:  32] Building Vega Specification for a bar chart...
+2017-10-26 10:50:38,759 INFO     [model] [build:  48] Done Building
+2017-10-26 10:50:38,760 INFO     [main] [run:  78] Vega specification outputted as: spec.json
+2017-10-26 11:15:30,487 INFO     [main] [<module>:  83] Starting Script
+2017-10-26 11:15:30,493 INFO     [model] [build:  57] Building Vega Specification for a scatter plot...
+2017-10-26 11:15:30,494 ERROR    [main] [<module>: 119] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 116, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 73, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/alphaclean_interface/generate_static/model.py", line 65, in build
+    min_domain, max_domain = self.get_domain()
+TypeError: 'NoneType' object is not iterable
+
+2017-10-26 11:15:30,495 INFO     [main] [<module>: 120] Ending Script Unsuccessfully
+2017-10-26 11:18:03,799 INFO     [main] [<module>:  83] Starting Script
+2017-10-26 11:18:03,805 INFO     [model] [build:  75] Building Vega Specification for a scatter plot...
+2017-10-26 11:18:03,806 ERROR    [main] [<module>: 119] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 116, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 73, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/alphaclean_interface/generate_static/model.py", line 83, in build
+    min_domain, max_domain = get_domain()
+NameError: name 'get_domain' is not defined
+
+2017-10-26 11:18:03,806 INFO     [main] [<module>: 120] Ending Script Unsuccessfully
+2017-10-26 11:18:13,627 INFO     [main] [<module>:  83] Starting Script
+2017-10-26 11:18:13,633 INFO     [model] [build:  75] Building Vega Specification for a scatter plot...
+2017-10-26 11:18:13,634 ERROR    [main] [<module>: 119] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 116, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 73, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/alphaclean_interface/generate_static/model.py", line 83, in build
+    min_domain, max_domain = self.get_domain()
+  File "/Users/conder/Desktop/alphaclean_interface/generate_static/model.py", line 64, in get_domain
+    for key, value in record:
+ValueError: too many values to unpack (expected 2)
+
+2017-10-26 11:18:13,634 INFO     [main] [<module>: 120] Ending Script Unsuccessfully
+2017-10-26 11:19:29,768 INFO     [main] [<module>:  83] Starting Script
+2017-10-26 11:19:29,775 INFO     [model] [build:  76] Building Vega Specification for a scatter plot...
+2017-10-26 11:19:29,776 ERROR    [main] [<module>: 119] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 116, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 73, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/alphaclean_interface/generate_static/model.py", line 84, in build
+    min_domain, max_domain = self.get_domain()
+  File "/Users/conder/Desktop/alphaclean_interface/generate_static/model.py", line 67, in get_domain
+    if key == x_title:
+NameError: name 'key' is not defined
+
+2017-10-26 11:19:29,776 INFO     [main] [<module>: 120] Ending Script Unsuccessfully
+2017-10-26 11:20:20,068 INFO     [main] [<module>:  83] Starting Script
+2017-10-26 11:20:20,074 INFO     [model] [build:  75] Building Vega Specification for a scatter plot...
+2017-10-26 11:20:20,075 ERROR    [main] [<module>: 119] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 116, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 73, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/alphaclean_interface/generate_static/model.py", line 83, in build
+    min_domain, max_domain = self.get_domain()
+  File "/Users/conder/Desktop/alphaclean_interface/generate_static/model.py", line 67, in get_domain
+    max_domain = max(max_domain, float(value))
+ValueError: could not convert string to float: 'null'
+
+2017-10-26 11:20:20,075 INFO     [main] [<module>: 120] Ending Script Unsuccessfully
+2017-10-26 11:21:10,925 INFO     [main] [<module>:  83] Starting Script
+2017-10-26 11:21:10,931 INFO     [model] [build:  74] Building Vega Specification for a scatter plot...
+2017-10-26 11:21:10,932 ERROR    [main] [<module>: 119] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 116, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 73, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/alphaclean_interface/generate_static/model.py", line 82, in build
+    min_domain, max_domain = self.get_domain()
+  File "/Users/conder/Desktop/alphaclean_interface/generate_static/model.py", line 66, in get_domain
+    max_domain = max(max_domain, float(value))
+ValueError: could not convert string to float: 'null'
+
+2017-10-26 11:21:10,932 INFO     [main] [<module>: 120] Ending Script Unsuccessfully
+2017-10-26 11:21:48,466 INFO     [main] [<module>:  83] Starting Script
+2017-10-26 11:21:48,472 INFO     [model] [build:  74] Building Vega Specification for a scatter plot...
+2017-10-26 11:21:48,473 ERROR    [main] [<module>: 119] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 116, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 73, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/alphaclean_interface/generate_static/model.py", line 82, in build
+    min_domain, max_domain = self.get_domain()
+  File "/Users/conder/Desktop/alphaclean_interface/generate_static/model.py", line 66, in get_domain
+    max_domain = max(max_domain, float(value))
+ValueError: could not convert string to float: 'null'
+
+2017-10-26 11:21:48,473 INFO     [main] [<module>: 120] Ending Script Unsuccessfully
+2017-10-26 11:22:13,146 INFO     [main] [<module>:  83] Starting Script
+2017-10-26 11:22:13,151 INFO     [model] [build:  74] Building Vega Specification for a scatter plot...
+2017-10-26 11:22:13,152 ERROR    [main] [<module>: 119] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 116, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 73, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/alphaclean_interface/generate_static/model.py", line 82, in build
+    min_domain, max_domain = self.get_domain()
+  File "/Users/conder/Desktop/alphaclean_interface/generate_static/model.py", line 66, in get_domain
+    max_domain = max(max_domain, float(value))
+ValueError: could not convert string to float: 'null'
+
+2017-10-26 11:22:13,152 INFO     [main] [<module>: 120] Ending Script Unsuccessfully
+2017-10-26 11:22:35,290 INFO     [main] [<module>:  83] Starting Script
+2017-10-26 11:22:35,296 INFO     [model] [build:  74] Building Vega Specification for a scatter plot...
+2017-10-26 11:22:35,297 ERROR    [main] [<module>: 119] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 116, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 73, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/alphaclean_interface/generate_static/model.py", line 82, in build
+    min_domain, max_domain = self.get_domain()
+  File "/Users/conder/Desktop/alphaclean_interface/generate_static/model.py", line 66, in get_domain
+    max_domain = max(max_domain, float(value))
+ValueError: could not convert string to float: 'null'
+
+2017-10-26 11:22:35,297 INFO     [main] [<module>: 120] Ending Script Unsuccessfully
+2017-10-26 11:23:14,141 INFO     [main] [<module>:  83] Starting Script
+2017-10-26 11:23:14,147 INFO     [model] [build:  74] Building Vega Specification for a scatter plot...
+2017-10-26 11:23:14,175 INFO     [model] [build:  96] Done Building
+2017-10-26 11:23:14,180 INFO     [main] [run:  78] Vega specification outputted as: spec.json
+2017-10-26 11:26:17,084 INFO     [main] [<module>:  83] Starting Script
+2017-10-26 11:26:17,090 INFO     [model] [build:  71] Building Vega Specification for a scatter plot...
+2017-10-26 11:26:17,092 INFO     [model] [build:  93] Done Building
+2017-10-26 11:26:17,092 INFO     [main] [run:  78] Vega specification outputted as: spec.json
+2017-10-26 11:26:42,448 INFO     [main] [<module>:  83] Starting Script
+2017-10-26 11:26:42,454 INFO     [model] [build:  71] Building Vega Specification for a scatter plot...
+2017-10-26 11:26:42,466 INFO     [model] [build:  93] Done Building
+2017-10-26 11:26:42,472 INFO     [main] [run:  78] Vega specification outputted as: spec.json
+2017-10-26 11:35:47,617 INFO     [main] [<module>:  83] Starting Script
+2017-10-26 11:35:47,621 INFO     [model] [build:  75] Building Vega Specification for a scatter plot...
+2017-10-26 11:35:47,622 ERROR    [main] [<module>: 119] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 116, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 73, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/alphaclean_interface/generate_static/model.py", line 83, in build
+    x_max_domain, y_high_range = self.get_domain()
+  File "/Users/conder/Desktop/alphaclean_interface/generate_static/model.py", line 70, in get_domain
+    heappush(y_data, value)
+NameError: name 'heappush' is not defined
+
+2017-10-26 11:35:47,622 INFO     [main] [<module>: 120] Ending Script Unsuccessfully
+2017-10-26 11:36:08,932 INFO     [main] [<module>:  83] Starting Script
+2017-10-26 11:36:08,937 INFO     [model] [build:  76] Building Vega Specification for a scatter plot...
+2017-10-26 11:36:08,938 ERROR    [main] [<module>: 119] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 116, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 73, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/alphaclean_interface/generate_static/model.py", line 84, in build
+    x_max_domain, y_high_range = self.get_domain()
+  File "/Users/conder/Desktop/alphaclean_interface/generate_static/model.py", line 71, in get_domain
+    heappush(y_data, value)
+NameError: name 'heappush' is not defined
+
+2017-10-26 11:36:08,938 INFO     [main] [<module>: 120] Ending Script Unsuccessfully
+2017-10-26 11:36:27,828 INFO     [main] [<module>:  83] Starting Script
+2017-10-26 11:36:27,833 INFO     [model] [build:  76] Building Vega Specification for a scatter plot...
+2017-10-26 11:36:27,845 ERROR    [main] [<module>: 119] [Unknown Error] Traceback (most recent call last):
+  File "main.py", line 116, in <module>
+    chart_type = args.chart_type,)
+  File "main.py", line 73, in run
+    self.vega_json = self.chart.build()
+  File "/Users/conder/Desktop/alphaclean_interface/generate_static/model.py", line 84, in build
+    x_max_domain, y_high_range = self.get_domain()
+  File "/Users/conder/Desktop/alphaclean_interface/generate_static/model.py", line 73, in get_domain
+    return x_max_domain, np.percentile(y_data, 75)
+  File "/Users/conder/anaconda/lib/python3.6/site-packages/numpy/lib/function_base.py", line 4116, in percentile
+    interpolation=interpolation)
+  File "/Users/conder/anaconda/lib/python3.6/site-packages/numpy/lib/function_base.py", line 3858, in _ureduce
+    r = func(a, **kwargs)
+  File "/Users/conder/anaconda/lib/python3.6/site-packages/numpy/lib/function_base.py", line 4233, in _percentile
+    x1 = take(ap, indices_below, axis=axis) * weights_below
+TypeError: ufunc 'multiply' did not contain a loop with signature matching types dtype('<U32') dtype('<U32') dtype('<U32')
+
+2017-10-26 11:36:27,845 INFO     [main] [<module>: 120] Ending Script Unsuccessfully
+2017-10-26 11:36:50,904 INFO     [main] [<module>:  83] Starting Script
+2017-10-26 11:36:50,909 INFO     [model] [build:  76] Building Vega Specification for a scatter plot...
+2017-10-26 11:36:50,931 INFO     [model] [build: 100] Done Building
+2017-10-26 11:36:50,936 INFO     [main] [run:  78] Vega specification outputted as: spec.json
+2017-10-26 11:37:11,275 INFO     [main] [<module>:  83] Starting Script
+2017-10-26 11:37:11,280 INFO     [model] [build:  76] Building Vega Specification for a scatter plot...
+2017-10-26 11:37:11,293 INFO     [model] [build: 100] Done Building
+2017-10-26 11:37:11,298 INFO     [main] [run:  78] Vega specification outputted as: spec.json
+2017-10-26 11:37:36,817 INFO     [main] [<module>:  83] Starting Script
+2017-10-26 11:37:36,822 INFO     [model] [build:  76] Building Vega Specification for a scatter plot...
+2017-10-26 11:37:36,833 INFO     [model] [build: 100] Done Building
+2017-10-26 11:37:36,837 INFO     [main] [run:  78] Vega specification outputted as: spec.json
+2017-10-26 11:37:57,728 INFO     [main] [<module>:  83] Starting Script
+2017-10-26 11:37:57,733 INFO     [model] [build:  76] Building Vega Specification for a scatter plot...
+2017-10-26 11:37:57,747 INFO     [model] [build: 100] Done Building
+2017-10-26 11:37:57,752 INFO     [main] [run:  78] Vega specification outputted as: spec.json
+2017-10-26 11:38:15,372 INFO     [main] [<module>:  83] Starting Script
+2017-10-26 11:38:15,377 INFO     [model] [build:  76] Building Vega Specification for a scatter plot...
+2017-10-26 11:38:15,391 INFO     [model] [build: 100] Done Building
+2017-10-26 11:38:15,396 INFO     [main] [run:  78] Vega specification outputted as: spec.json

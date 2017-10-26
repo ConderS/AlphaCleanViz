@@ -4,7 +4,7 @@ Generates pre-customized, static Vega visualizations from a given .csv dataset
 ### Location of data file (.csv):
     --data <data_file_location_with_respect_to_main.py>
 __Ex__:
-`--data examples/example1_barchart.csv`
+`--data examples/generic.csv`
     
 ### Chart Type:
 __Available Types__:
@@ -30,4 +30,4 @@ __Scatter__:
    `--columns <column1> <column2> <etc...>`
 
 ## Example Usage:
-    python main.py --data examples/example1_barchart.json --columns category amount --chart_type bar
+    python main.py --data examples/generic.csv --columns category amount --chart_type bar

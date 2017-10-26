@@ -37,6 +37,11 @@ class Pipeline(object):
         self.chart = None
         self.vega_json = None
 
+    """
+    Converts CSV data to a dictionary so we can define data inline in Vega specification.
+
+    Unnecessary if we upload the file to the website and specify a url to the csv instead
+    """
     def convert_csv_to_dict(self, data_file, columns):
         reader = csv.DictReader(open(data_file, encoding='utf-8-sig'))
 

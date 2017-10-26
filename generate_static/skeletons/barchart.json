@@ -14,7 +14,7 @@
     {
       "name": "xscale",
       "type": "band",
-      "domain": {"data": "table", "field": null},
+      "domain": null,
       "range": "width",
       "padding": 0.05,
       "round": true
