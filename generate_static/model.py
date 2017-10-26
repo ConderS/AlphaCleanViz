@@ -1,8 +1,6 @@
 import logging
 import json
 from enum import Enum
-import heapq as hpq
-import numpy as np
 
 from utils import updateNestedDictByVal
 
@@ -58,9 +56,9 @@ class ScatterPlot(Chart):
     def get_domain(self):
         x_title = self.columns[0]
         y_title = self.columns[1]
-        y_data = []
 
         x_max_domain = -float('inf')
+        y_max_domain = -float('inf')
 
         for record in self.data:
             for key, value in record.items():
@@ -68,9 +66,9 @@ class ScatterPlot(Chart):
                     if key == x_title:
                         x_max_domain = max(x_max_domain, float(value)) 
                     if key == y_title:
-                        hpq.heappush(y_data, float(value))
+                        y_max_domain = max(y_max_domain, float(value)) 
 
-        return x_max_domain, np.percentile(y_data, 99.5) 
+        return x_max_domain, y_max_domain
 
     def build(self):
         self.logger.info('Building Vega Specification for a scatter plot...')
@@ -81,9 +79,9 @@ class ScatterPlot(Chart):
         # Fills in data values
         updateNestedDictByVal(self.spec, "_data_values", self.data)
 
-        x_max_domain, y_high_range = self.get_domain()
+        x_max_domain, y_max_domain = self.get_domain()
         x_domain = [0, x_max_domain]
-        y_domain = [0, y_high_range]
+        y_domain = [0, y_max_domain]
         updateNestedDictByVal(self.spec, "_x_domain", x_domain)
         updateNestedDictByVal(self.spec, "_y_domain", y_domain)
 
