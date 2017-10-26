@@ -34,7 +34,7 @@ __Line__:
 
 *Note: The line chart can plot an arbitrary number of lines as long as the data for each line is specified on all three columns*
 
-   --columns <column1> <column2> <etc...>
+    --columns <column1> <column2> <etc...>
 
 ## Example Usage:
     python main.py --data examples/generic.csv --columns category amount --chart_type bar
