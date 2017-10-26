@@ -1132,3 +1132,7 @@ TypeError: ufunc 'multiply' did not contain a loop with signature matching types
 2017-10-26 11:38:15,377 INFO     [model] [build:  76] Building Vega Specification for a scatter plot...
 2017-10-26 11:38:15,391 INFO     [model] [build: 100] Done Building
 2017-10-26 11:38:15,396 INFO     [main] [run:  78] Vega specification outputted as: spec.json
+2017-10-26 11:40:27,394 INFO     [main] [<module>:  83] Starting Script
+2017-10-26 11:40:27,400 INFO     [model] [build:  74] Building Vega Specification for a scatter plot...
+2017-10-26 11:40:27,412 INFO     [model] [build:  98] Done Building
+2017-10-26 11:40:27,418 INFO     [main] [run:  78] Vega specification outputted as: spec.json
