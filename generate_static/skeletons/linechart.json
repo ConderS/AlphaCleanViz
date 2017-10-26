@@ -36,7 +36,7 @@
       "name": "x",
       "type": "point",
       "range": "width",
-      "domain": {"data": "table", "field": "_x_scale"}
+      "domain": {"data": "table", "field": "_x_title"}
     },
     {
       "name": "y",
@@ -44,7 +44,7 @@
       "range": "height",
       "nice": true,
       "zero": true,
-      "domain": {"data": "table", "field": "_y_scale"}
+      "domain": {"data": "table", "field": "_y_title"}
     },
     {
       "name": "color",
@@ -75,8 +75,8 @@
           "from": {"data": "series"},
           "encode": {
             "enter": {
-              "x": {"scale": "x", "field": "_x_scale"},
-              "y": {"scale": "y", "field": "_y_scale"},
+              "x": {"scale": "x", "field": "_x_title"},
+              "y": {"scale": "y", "field": "_y_title"},
               "stroke": {"scale": "color", "field": "c"},
               "strokeWidth": {"value": 2}
             },

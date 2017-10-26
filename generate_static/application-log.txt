@@ -1176,3 +1176,7 @@ TypeError: update_data() takes 3 positional arguments but 4 were given
 2017-10-26 12:03:30,037 INFO     [model] [build:  71] Building Vega Specification for a scatter plot...
 2017-10-26 12:03:30,043 INFO     [model] [update_data:  33] Done Building
 2017-10-26 12:03:30,048 INFO     [main] [run:  78] Vega specification outputted as: spec.json
+2017-10-26 12:12:39,720 INFO     [main] [<module>:  83] Starting Script
+2017-10-26 12:12:39,722 INFO     [model] [build:  92] Building Vega Specification for a scatter plot...
+2017-10-26 12:12:39,724 INFO     [model] [update_data:  33] Done Building
+2017-10-26 12:12:39,724 INFO     [main] [run:  78] Vega specification outputted as: spec.json

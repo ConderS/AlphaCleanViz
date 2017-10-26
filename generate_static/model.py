@@ -31,7 +31,6 @@ class Chart(object):
             updateNestedDictByVal(self.spec, field, new_values[counter])
         
         self.logger.info('Done Building')
-        return self.spec
 
 
 class BarChart(Chart):
@@ -45,8 +44,9 @@ class BarChart(Chart):
         data_fields = ['_data_values', '_x_title', '_y_title']
         new_values = [self.data, self.columns[0], self.columns[1]]
 
-        return self.update_data(data_fields, new_values)
+        self.update_data(data_fields, new_values)
 
+        return self.spec
 
 class ScatterPlot(Chart):
 
@@ -81,10 +81,22 @@ class ScatterPlot(Chart):
         
         new_values = [self.data, x_domain, y_domain, self.columns[0], self.columns[1], self.columns[2]]
 
-        return self.update_data(data_fields, new_values)
+        self.update_data(data_fields, new_values)
+
+        return self.spec
 
 
 class LineChart(Chart):
 
     def build(self):
-        pass
+        self.logger.info('Building Vega Specification for a scatter plot...')
+        skel_file = open(SKELETONS['LineChart']).read()
+        self.spec = json.loads(skel_file)
+
+        data_fields = ['_data_values', '_x_title', '_y_title', '_color']
+        new_values = [self.data, self.columns[0], self.columns[1], self.columns[2]]
+
+        self.update_data(data_fields, new_values)
+
+        return self.spec
+

@@ -16,16 +16,23 @@ __Available Types__:
     `--chart_type <chart_type>`
 
 ### Columns to be plotted (Optional):
-User has the option to specify which columns to plot. Otherwise, the program will assume the following schema from the sequential order of the data file's columns. In the latter case, the program will assume that the data file *only* contains the relevant columns.
+User has the option to specify which columns to plot by inputting their titles. Otherwise, the program will assume the following schema from the sequential order of the data file's columns. In the latter case, the program will assume that the data file *only* contains the relevant columns.
 
 __Bar__:
-- Column 1: X Axis
+- Column 1: X Axis 
 - Column 2: Y Axis
 
 __Scatter__:
+- Column 1: X Axis 
+- Column 2: Y Axis 
+- Column 3 (Optional): Size of Data Points
+
+__Line__:
 - Column 1: X Axis
 - Column 2: Y Axis
-- Column 3 (Optional): Size of Data Points
+- Column 3: Color
+
+*Note: The line chart can plot an arbitrary number of lines as long as each line is specified on all three columns*
 
    `--columns <column1> <column2> <etc...>`
 
