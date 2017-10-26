@@ -30,4 +30,4 @@ __Scatter__:
    `--columns <column1> <column2> <etc...>`
 
 ## Example Usage:
-    python main.py --data examples/generic.csv --columns category amount --chart_type bar
+    `python main.py --data examples/generic.csv --columns category amount --chart_type bar`
