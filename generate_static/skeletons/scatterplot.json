@@ -35,7 +35,7 @@
       "round": true,
       "nice": false,
       "zero": true,
-      "domain": {"data": "source", "field": null},
+      "domain": {"data": "source", "field": "_z_title"},
       "range": [4,361]
     }
   ],
@@ -47,7 +47,7 @@
       "domain": false,
       "orient": "bottom",
       "tickCount": 5,
-      "title": null
+      "title": "_x_title"
     },
     {
       "scale": "y",
@@ -55,14 +55,14 @@
       "domain": false,
       "orient": "left",
       "titlePadding": 5,
-      "title": null
+      "title": "_y_title"
     }
   ],
 
   "legends": [
     {
       "size": "size",
-      "title": null,
+      "title": "_z_title",
       "format": "s",
       "encode": {
         "symbols": {
@@ -84,9 +84,9 @@
       "from": {"data": "source"},
       "encode": {
         "update": {
-          "x": {"scale": "x", "field": null},
-          "y": {"scale": "y", "field": null},
-          "size": {"scale": "size", "field": null},
+          "x": {"scale": "x", "field": "_x_title"},
+          "y": {"scale": "y", "field": "_y_title"},
+          "size": {"scale": "size", "field": "_z_title"},
           "shape": {"value": "circle"},
           "strokeWidth": {"value": 2},
           "opacity": {"value": 0.5},

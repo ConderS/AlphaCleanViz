@@ -76,24 +76,21 @@ class ScatterPlot(Chart):
         skel_file = open(SKELETONS['ScatterPlot']).read()
         self.spec = json.loads(skel_file)
 
-        # Fills in data values
-        updateNestedDictByVal(self.spec, "_data_values", self.data)
+        fill_data_fields = ['_data_values', '_x_domain', '_y_domain', '_x_title', '_y_title', '_z_title']
 
         x_max_domain, y_max_domain = self.get_domain()
         x_domain = [0, x_max_domain]
         y_domain = [0, y_max_domain]
-        updateNestedDictByVal(self.spec, "_x_domain", x_domain)
-        updateNestedDictByVal(self.spec, "_y_domain", y_domain)
+        
+        fill_new_values = [self.data, x_domain, y_domain, column[0], column[1], column[2]]
 
-        # Alternates between columns to fill in relevant X and Y fields in Vega's scale, title, and marks specifications
-        for i in range(3, 11):
-            if not i % 3:
-                val = self.columns[2]
-            elif i % 3 == 2:
-                val = self.columns[1]
-            else:
-                val = self.columns[0]
-            updateNestedDictByVal(self.spec, None, val)
+        for counter, field in enumerate(fill_data_fields):
+            updateNestedDictByVal(self.spec, field, fill_new_values[counter])
+
+        return self.spec
+
+        
+
 
         self.logger.info('Done Building')
 
@@ -103,4 +100,6 @@ class ScatterPlot(Chart):
 
 
 class LineChart(Chart):
-    pass
+
+    def build(self):
+
